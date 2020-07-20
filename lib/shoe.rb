@@ -6,11 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.collect do |new_brand|
-      BRANDS.!include?(new_brand)
-      BRANDS << new_brand
-    end  
+    # BRANDS << brand
   end
   
   def cobble
